@@ -45,14 +45,30 @@ header{
 	position: relative;
 	overflow: hidden;
 }
+
 .header__title{
 	width: 600px;
 	height: 196px;
 	position: absolute;
 	top: 121px;
-	right: 70px;
+	right: 60px;
 	z-index: 5;
+	animation: headertitle 3s;
 }
+
+
+@keyframes headertitle {
+  from{
+		right: -100px;
+	}
+
+	to{
+		right: 60px;
+	}
+}
+
+
+
 .header__logo{
 	width: 161px;
 	height: 158px;
@@ -60,12 +76,77 @@ header{
 	top: 1527px;
 	left: 70px;
 	z-index: 5;
+	animation:header__logo 3s;
 }
+@keyframes header__logo {
+  from{
+		left: -100px;
+	}
+
+	to{
+		left: 60px;
+	}
+}
+
 .banner>div{
 	position: absolute;
 	top: 0;
 	left: 0;
 }
+.banner__1{
+	animation: banner__1 2s;
+}
+
+@keyframes banner__1 {
+  from{
+		left: -100px;
+	}
+
+	to{
+		left: 0px;
+	}
+}
+.banner__2{
+	animation: banner__2 2s;
+}
+
+@keyframes banner__2 {
+  from{
+		right: -100px;
+	}
+
+	to{
+		right: 0;
+	}
+}
+
+.banner__3{
+	animation: banner__3 2s;
+}
+
+@keyframes banner__3 {
+  from{
+		left: -100px;
+	}
+
+	to{
+		left: 0px;
+	}
+}
+.banner__4{
+	animation: banner__4 2s;
+}
+
+@keyframes banner__4 {
+  from{
+		right: -100px;
+	}
+
+	to{
+		right: 0;
+	}
+}
+
 .header__text{
 	width: 1295px;
 	height: 1468px;
@@ -273,8 +354,12 @@ header{
 } */
 /* webportfolio */
 .webportfolio{
+	width: 100%;
   height: 880px;
   background-color: #EEF6E3;
+}
+.webportfolio>.name{
+	padding-top: 20px;
 }
 
 /* .webportfolio__list{
@@ -430,6 +515,10 @@ position:absolute;
 /* portfolio1,2 */
 .portfolio-1{
   height: 892px;
+}
+
+.portfolio-1>.name{
+	z-index: 5;
 }
 .portfolio{
 	z-index: 2;
@@ -673,7 +762,6 @@ justify-content: center;
 	bottom: 0;
 	left: 0;
 }
-
 
 /* footer */
 footer{
