@@ -1,6 +1,6 @@
 /* no */
 body,ul,li {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
 }
@@ -170,6 +170,7 @@ header{
 	width: 1440px;
 	height: 4265px;
 	margin: 0 auto;
+	overflow: hidden;
 }
 .con{
   width: 1440px;
