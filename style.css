@@ -26,7 +26,7 @@ img{
 /* li */
 
 .con{
-  width: 1400px;
+  width: 1440px;
   margin: 0 auto;
 }
 
@@ -168,7 +168,7 @@ header{
 .main{
 	position: relative;
 	width: 1440px;
-	height: 4265px;
+	height: 100%;
 	margin: 0 auto;
 	overflow: hidden;
 }
@@ -349,10 +349,6 @@ header{
 }
 
 
-/* portfolio */
-/* .portfolio{
-  height: ;
-} */
 /* webportfolio */
 .webportfolio{
 	width: 100%;
@@ -514,15 +510,22 @@ position:absolute;
 
 
 /* portfolio1,2 */
-.portfolio-1{
-  height: 892px;
+
+
+.portfolio{
+	z-index: 2;
+height: 100%;
+background-image: url(https://i.imgur.com/e2M7nC6.jpg);
+background-repeat:no-repeat;
+  background-size:cover;
+}
+
+.portfolio>div{
+	padding-bottom: 150px;
 }
 
 .portfolio-1>.name{
 	z-index: 5;
-}
-.portfolio{
-	z-index: 2;
 }
 
 .portfolio__list>.swiper {
@@ -755,6 +758,111 @@ justify-content: center;
 	margin-top: 15px;
 }
 
+/* .portfolio__box1 */
+.portfolio__button{
+	height: 45px;
+	width: 100%;
+	display: flex;
+	justify-content: end;
+	margin-top: 100px;
+}
+.portfolio__button>div{
+	width: 45px;
+	height: 100%;
+	margin-right: 50px;
+}
+.portfolio__button>div>img{
+	display: none;
+}
+.portfolio__button>div>img.active{
+	display: block;
+}
+.portfolio__list-1{
+		display:flex;
+		flex-wrap:wrap;
+		justify-content:space-between;
+		margin-top: 50px;
+		z-index: 5;
+	}
+	
+	.portfolio__list-1>section>a{
+		width:320px;
+		height:384px;
+		border-radius:10px;
+		margin-bottom:40px;
+	/* 	margin-right:40px; */
+	overflow: hidden;
+	}
+	
+	.portfolio__list-1 a {
+		display:flex;
+		align-items:center;
+		justify-content:center;
+		position: relative;
+	}
+	.portfolio__list-1 a>div{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		background-color:rgba(0,0,0,0.5);
+		display:none;
+	}
+	.portfolio__list-1 a section{
+		width:290px;
+		height:340px;
+		z-index: 5;
+		margin: 0 15px;
+		margin-top: 30px;
+	color: #fff;
+	}
+	.portfolio__list-1 h1{
+		font-size: 25px;
+		margin-bottom: 40px;
+	}
+	.class_18px>h1{
+		font-size: 18px;
+	}
+	.portfolio__list-1 h1>span{
+		font-size:30px;
+		margin-right:10px;
+	}
+	
+	.portfolio__list-1 h3{
+		font-size: 18px;
+	}
+	.portfolio__list-1 h4{
+		width:100%;
+		text-align:end;
+		font-size: 13px;
+		position: absolute;
+		bottom: 15px;
+		right: 15px;
+	}
+
+	.portfolio__list-1>section>a:hover>div{
+		display:block;
+		z-index: 5;
+	}
+	.portfolio__box{
+		display: none;
+	}
+	.portfolio__box.active{
+		display: block;
+	}
+	.portfolio__box1{
+		display: none;
+	}
+	.portfolio__box1.active{
+		display: block;
+	}
+
+
+	.portfolio-2 .portfolio__list-1 h3{
+		text-align: center;
+	}
+	
 /* bg__img */
 .bg__img{
 	width: 1440px;
@@ -770,4 +878,5 @@ footer{
   height: 200px;
 	margin: 0 auto;
   background-color: skyblue;
+	margin-top: 150px;
 }

@@ -23,6 +23,19 @@ $(function(){
     }
   });
   
+
+
+  $(".button-one").click(function(){
+    $(".portfolio__but>img").toggleClass("active");
+    $(".portfolio__box").addClass("active");
+    $(".portfolio__box").siblings().removeClass("active");
+  });
+
+  $(".button-many").click(function(){
+    $(".portfolio__but>img").toggleClass("active");
+    $(".portfolio__box1").addClass("active");
+    $(".portfolio__box1").siblings().removeClass("active");
+  });
 })
 
 
