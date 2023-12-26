@@ -39,3 +39,27 @@ $(function(){
 })
 
 
+// 애니메이션
+
+let mainImg = document.querySelector(".history__title");
+
+window.addEventListener("scroll", function(){
+
+  let value = this.window.scrollY;
+  console.log("scrollY",value);
+
+  if(value>600){
+    $(".banner__s").css("display","block");
+    $(".header__logo").css("display","block");
+  
+  }
+
+  // else if(value>1500){
+  //   mainImg.style.animation = "history_s 2s ease-out forwards";
+  // }
+
+
+});
+
+
+

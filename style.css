@@ -77,6 +77,7 @@ header{
 	left: 70px;
 	z-index: 5;
 	animation:header__logo 3s;
+	display: none;
 }
 @keyframes header__logo {
   from{
@@ -120,7 +121,8 @@ header{
 	}
 }
 
-.banner__3{
+.banner__3, .banner__s{
+	display: none;
 	animation: banner__3 2s;
 }
 
@@ -133,7 +135,8 @@ header{
 		left: 0px;
 	}
 }
-.banner__4{
+.banner__4, .banner__s{
+	display: none;
 	animation: banner__4 2s;
 }
 
@@ -299,6 +302,22 @@ header{
 }
 
 
+
+
+@keyframes history_s {
+  from{
+		opacity: 0;
+		transform: translateY(150px);
+	}
+
+	to{
+		opacity: 1;
+	}
+}
+
+/* .history__an{
+	animation: history__s 2s;
+} */
 
 .history>div>section{
   display: flex;
